@@ -1,0 +1,20 @@
+[package]
+name = "krc2lrc"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+# https://www.aloxaf.com/2018/09/reduce_rust_size/
+#codegen-units = 1
+#opt-level = 'z'
+#lto = true
+#strip = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+flate2 = "1.0.28"
+#libflate = "2.0.0"
+regex = "1.10.4"
+structopt = "0.3.26"
+lazy_static = "1.4.0"
