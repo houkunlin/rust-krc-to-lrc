@@ -152,7 +152,11 @@ pub fn decode_krc(krc_bytes: Vec<u8>) -> String {
 
     // 解压数据，参考了 https://github.com/CGQAQ/krc-rs/blob/master/src/parser.rs#L24
     let mut d = ZlibDecoder::new(&buffer[..]);
-    d.read_to_string(&mut krc_raw).expect("decode krc bytes failed");
+    let result = d.read_to_string(&mut krc_raw);
+
+    if result.is_err() {
+        // println!("decode krc bytes failed");
+    }
 
     // let x = buffer.as_slice();
     //// libflate = "2.0.0"
