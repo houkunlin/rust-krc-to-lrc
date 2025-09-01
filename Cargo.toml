@@ -16,8 +16,9 @@ edition = "2021"
 embed-resource = "3.0.4"
 
 [dependencies]
-flate2 = "1.0.33"
+flate2 = "1.1.2"
 #libflate = "2.0.0"
-regex = "1.10.6"
-structopt = "0.3.26"
+regex = "1.11.2"
 lazy_static = "1.5.0"
+console = "0.16.0"
+clap = { version = "4.5.46", features = ["derive"] }
