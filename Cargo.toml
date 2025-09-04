@@ -4,9 +4,9 @@ version = "0.1.3"
 edition = "2021"
 
 [package.metadata.winres]
-ProductName = "KRC 转 LRC"
 CompanyName = "侯坤林"
 LegalCopyright = "© 2025 侯坤林. All rights reserved."
+ProductName = "KRC 转 LRC"
 InternalName = "krc2lrc"
 OriginalFilename = "krc2lrc.exe"
 FileDescription = "酷狗音乐 KRC 歌词文件转 LRC 歌词文件程序"
