@@ -39,7 +39,7 @@ return zlib.unzipSync(buffer)
 /// str_to_time(61234) = "[01:01.23]"
 /// ```
 pub fn str_to_time(time: i32) -> String {
-    let mut result = String::new();
+    let mut result = String::with_capacity(10);
     result.push('[');
     if time >= 60_000 {
         result.push_str(&format!("{:02}", time / 60_000));
